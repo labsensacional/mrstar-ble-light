@@ -7,6 +7,26 @@ lamps use.
 If your RGB strip/lamp advertises over Bluetooth as **`GATT-DEMO`** and its
 Android app is **"MR Star"** (`com.frok.mrstar`), this controls it directly.
 
+<p><img src="docs/images/corner-light.jpg" alt="RGB LED corner floor lamp controlled by IR remote and phone app, advertising over BLE as GATT-DEMO" width="420"></p>
+
+## Which light is this?
+
+The unit I reverse-engineered is a **RGB LED corner floor lamp** (a vertical
+light tube on a small tripod, ~110 cm tall). These are sold under many brand
+names with near-identical specs:
+
+- **RGB** color, brightness, and ~117 built-in animated effects
+- Three ways to control it: a **24-key IR remote**, the **"MR Star" phone app**,
+  and **Bluetooth LE** (what this repo uses)
+- A **music / rhythmic audio sensor** mode (reacts to sound)
+- Advertises over BLE as **`GATT-DEMO`**
+
+The exact one I bought (Argentina):
+[Luz LED Esquinera RGB 110cm — Control App + Sensor Audio Rítmico (MercadoLibre)](https://www.mercadolibre.com.ar/luz-led-esquinera-rgb-110cm-control-app-sensor-audio-ritmico/up/MLAU3903930125?pdp_filters=item_id:MLA1754575091)
+
+If yours looks like this, has those stats, or shows up as `GATT-DEMO` in a BLE
+scan, this should work for you.
+
 ## Protocol in one line
 
 ```
